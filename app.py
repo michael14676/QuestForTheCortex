@@ -333,5 +333,5 @@ for col, team in zip(cols, teams):
 st.markdown("<hr class='quest-divider'>", unsafe_allow_html=True)
 st.caption(
     f"Auto-refreshes every {REFRESH_INTERVAL_MS // 1000} seconds • "
-    f"Last loaded: {pd.Timestamp.now().strftime('%I:%M:%S %p')}"
+    f"Last loaded: {pd.Timestamp.now(tz='US/Central').strftime('%I:%M:%S %p')} CST"
 )
